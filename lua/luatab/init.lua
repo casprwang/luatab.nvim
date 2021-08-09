@@ -67,9 +67,9 @@ local function formatTab(current)
 
     return hl .. '%' .. current .. 'T' .. ' ' ..
         tabWindowCount(current) ..
+        tabDevicon(bufnr, isSelected) .. '%T' ..
         tabName(bufnr) .. ' ' ..
         tabModified(bufnr) ..
-        tabDevicon(bufnr, isSelected) .. '%T' ..
         tabSeparator(current)
 end
 
